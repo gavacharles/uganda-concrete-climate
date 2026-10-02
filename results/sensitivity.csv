@@ -1,0 +1,41 @@
+site,concrete,factor,p_base,p_low,p_high
+Kampala,design_blended,Emission scenario (no change / SSP5-8.5),0.55188,0.3648,0.68672
+Kampala,design_blended,Climate model (lowest / highest),0.55188,0.4669,0.58942
+Kampala,design_blended,Humidity baseline (raw downscaled),0.55188,0.6242,0.6242
+Kampala,design_blended,Blended-cement factor (2.6 / 4.4),0.55188,0.39114,0.70814
+Kampala,design_blended,w/c (0.50 / 0.55),0.55188,0.42804,0.65952
+Kampala,design_blended,Mean cover (+5 / −5 mm),0.55188,0.3528,0.75178
+Kampala,design_blended,Curing (14 / 3 days),0.55188,0.31218,0.81266
+Kampala,design_blended,Urban CO₂ factor (1.0 / 1.2),0.55188,0.49308,0.60578
+Kampala,design_blended,Activation energy (30 / 50 kJ/mol),0.55188,0.52306,0.58216
+Kampala,design_blended,Elevation correction off (sea level),0.55188,0.6388,0.6388
+Kampala,asbuilt_blended,Emission scenario (no change / SSP5-8.5),0.99318,0.98226,0.99678
+Kampala,asbuilt_blended,Climate model (lowest / highest),0.99318,0.98896,0.9945
+Kampala,asbuilt_blended,Humidity baseline (raw downscaled),0.99318,0.99516,0.99516
+Kampala,asbuilt_blended,Blended-cement factor (2.6 / 4.4),0.99318,0.98596,0.99756
+Kampala,asbuilt_blended,w/c (0.55 / 0.70),0.99318,0.9753,0.99948
+Kampala,asbuilt_blended,Mean cover (+5 / −5 mm),0.99318,0.98284,0.99758
+Kampala,asbuilt_blended,Curing (7 / 1 days),0.99318,0.94934,0.99848
+Kampala,asbuilt_blended,Urban CO₂ factor (1.0 / 1.2),0.99318,0.9906,0.99508
+Kampala,asbuilt_blended,Activation energy (30 / 50 kJ/mol),0.99318,0.99196,0.99428
+Kampala,asbuilt_blended,Elevation correction off (sea level),0.99318,0.9959,0.9959
+Arua,design_blended,Emission scenario (no change / SSP5-8.5),0.92036,0.82316,0.9637
+Arua,design_blended,Climate model (lowest / highest),0.92036,0.90684,0.9397
+Arua,design_blended,Humidity baseline (raw downscaled),0.92036,0.62836,0.62836
+Arua,design_blended,Blended-cement factor (2.6 / 4.4),0.92036,0.85338,0.96622
+Arua,design_blended,w/c (0.50 / 0.55),0.92036,0.867,0.95594
+Arua,design_blended,Mean cover (+5 / −5 mm),0.92036,0.82876,0.9702
+Arua,design_blended,Curing (14 / 3 days),0.92036,0.78678,0.98282
+Arua,design_blended,Urban CO₂ factor (1.0 / 1.2),0.92036,0.8955,0.93824
+Arua,design_blended,Activation energy (30 / 50 kJ/mol),0.92036,0.90506,0.93322
+Arua,design_blended,Elevation correction off (sea level),0.92036,0.949,0.949
+Arua,asbuilt_blended,Emission scenario (no change / SSP5-8.5),0.99968,0.99886,0.99992
+Arua,asbuilt_blended,Climate model (lowest / highest),0.99968,0.99964,0.99978
+Arua,asbuilt_blended,Humidity baseline (raw downscaled),0.99968,0.99524,0.99524
+Arua,asbuilt_blended,Blended-cement factor (2.6 / 4.4),0.99968,0.99926,0.9999
+Arua,asbuilt_blended,w/c (0.55 / 0.70),0.99968,0.99838,0.99996
+Arua,asbuilt_blended,Mean cover (+5 / −5 mm),0.99968,0.999,0.9999
+Arua,asbuilt_blended,Curing (7 / 1 days),0.99968,0.9957,0.99994
+Arua,asbuilt_blended,Urban CO₂ factor (1.0 / 1.2),0.99968,0.99956,0.99978
+Arua,asbuilt_blended,Activation energy (30 / 50 kJ/mol),0.99968,0.9996,0.99976
+Arua,asbuilt_blended,Elevation correction off (sea level),0.99968,0.9998,0.9998

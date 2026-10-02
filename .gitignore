@@ -1,0 +1,35 @@
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# raw downloads (fetched by the scripts; large and/or licensed)
+data/raw/
+data/processed/nex_annual/
+data/processed/nex_annual_v2/
+data/processed/nex_rain_v1/
+
+# OpenStreetMap-derived data (ODbL): regenerate with src/osm_levels.py
+data/processed/osm_building_levels.csv
+
+# Scopus exports and screening tables containing Scopus abstracts (Scopus terms do not allow redistribution)
+review/scopus/*.csv
+review/scopus/raw_exports/
+review/results/union.csv
+review/results/screen_stage1_all.csv
+review/results/screen_stage1_included.csv
+review/results/scopus_only.csv
+review/results/S*_*.csv
+
+# copyrighted papers and personal links
+literature/
+documents/
+
+# logs
+*_log.txt
+results/pipeline_8models.log
+data/fetch_log*.txt
+
+# superseded intermediate results
+results/*_6models.csv

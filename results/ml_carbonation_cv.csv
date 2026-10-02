@@ -1,0 +1,4 @@
+model,r2,mae_mm_per_sqrt_yr
+"ML, leave-source-out",-1.420362016891652,3.9854490958801727
+"fib (CEM I resistance, all mixes)",-0.4805013184011677,2.8164630395099692
+fib with fitted fly-ash factor 4.6,0.022979303790148342,2.1345318382455707

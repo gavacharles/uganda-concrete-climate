@@ -1,0 +1,163 @@
+site,concrete,case,exposure,p_init_2100,mean_depth_2100_mm
+Kampala,design_CEM_I,no_change,sheltered,0.01166,15.45033399007317
+Kampala,design_CEM_I,no_change,"vertical, rain-exposed",0.0,3.9708203122417496
+Kampala,design_CEM_I,no_change,"horizontal, rain-exposed",0.0,1.2113267432390018
+Kampala,design_CEM_I,SSP2-4.5,sheltered,0.0385,17.963853803301056
+Kampala,design_CEM_I,SSP2-4.5,"vertical, rain-exposed",0.0,4.615796324485804
+Kampala,design_CEM_I,SSP2-4.5,"horizontal, rain-exposed",0.0,1.408206723603768
+Kampala,design_CEM_I,SSP5-8.5,sheltered,0.08216,20.136533351195865
+Kampala,design_CEM_I,SSP5-8.5,"vertical, rain-exposed",2e-05,5.185979811525199
+Kampala,design_CEM_I,SSP5-8.5,"horizontal, rain-exposed",0.0,1.5871175352349234
+Kampala,design_blended,no_change,sheltered,0.3648,27.478647802125504
+Kampala,design_blended,no_change,"vertical, rain-exposed",0.0005,7.062377302135128
+Kampala,design_blended,no_change,"horizontal, rain-exposed",0.0,2.154396416077679
+Kampala,design_blended,SSP2-4.5,sheltered,0.55188,31.948865782826328
+Kampala,design_blended,SSP2-4.5,"vertical, rain-exposed",0.00188,8.20951003915665
+Kampala,design_blended,SSP2-4.5,"horizontal, rain-exposed",0.0,2.5045476984476114
+Kampala,design_blended,SSP5-8.5,sheltered,0.68672,35.813648982007436
+Kampala,design_blended,SSP5-8.5,"vertical, rain-exposed",0.00506,9.22386059685684
+Kampala,design_blended,SSP5-8.5,"horizontal, rain-exposed",0.0,2.822833822518044
+Kampala,asbuilt_blended,no_change,sheltered,0.98226,56.83579862857154
+Kampala,asbuilt_blended,no_change,"vertical, rain-exposed",0.24198,14.612684304263155
+Kampala,asbuilt_blended,no_change,"horizontal, rain-exposed",0.01006,4.45719975806383
+Kampala,asbuilt_blended,SSP2-4.5,sheltered,0.99318,66.08090485212855
+Kampala,asbuilt_blended,SSP2-4.5,"vertical, rain-exposed",0.31618,16.985571176332343
+Kampala,asbuilt_blended,SSP2-4.5,"horizontal, rain-exposed",0.01648,5.181371507859899
+Kampala,asbuilt_blended,SSP5-8.5,sheltered,0.99678,74.07617970257829
+Kampala,asbuilt_blended,SSP5-8.5,"vertical, rain-exposed",0.37704,19.084897723739928
+Kampala,asbuilt_blended,SSP5-8.5,"horizontal, rain-exposed",0.02348,5.840050867155996
+Mbale,design_CEM_I,no_change,sheltered,0.0222,16.691265402567918
+Mbale,design_CEM_I,no_change,"vertical, rain-exposed",0.0,4.464412897997862
+Mbale,design_CEM_I,no_change,"horizontal, rain-exposed",0.0,1.4190354073668865
+Mbale,design_CEM_I,SSP2-4.5,sheltered,0.05112,18.72356709931465
+Mbale,design_CEM_I,SSP2-4.5,"vertical, rain-exposed",0.0,4.924098308946472
+Mbale,design_CEM_I,SSP2-4.5,"horizontal, rain-exposed",0.0,1.5390443132962943
+Mbale,design_CEM_I,SSP5-8.5,sheltered,0.09858,20.514130780488806
+Mbale,design_CEM_I,SSP5-8.5,"vertical, rain-exposed",2e-05,5.358674121456869
+Mbale,design_CEM_I,SSP5-8.5,"horizontal, rain-exposed",0.0,1.665468589576777
+Mbale,design_blended,no_change,sheltered,0.46106,29.68566107441822
+Mbale,design_blended,no_change,"vertical, rain-exposed",0.00144,7.940239202226389
+Mbale,design_blended,no_change,"horizontal, rain-exposed",0.0,2.5237907332359986
+Mbale,design_blended,SSP2-4.5,sheltered,0.60294,33.30026537693376
+Mbale,design_blended,SSP2-4.5,"vertical, rain-exposed",0.00314,8.757877333537447
+Mbale,design_blended,SSP2-4.5,"horizontal, rain-exposed",0.0,2.737246314427142
+Mbale,design_blended,SSP5-8.5,sheltered,0.69502,36.485743468476215
+Mbale,design_blended,SSP5-8.5,"vertical, rain-exposed",0.00704,9.531130307821531
+Mbale,design_blended,SSP5-8.5,"horizontal, rain-exposed",0.0,2.9622198525283125
+Mbale,asbuilt_blended,no_change,sheltered,0.9886,61.40074985995483
+Mbale,asbuilt_blended,no_change,"vertical, rain-exposed",0.29928,16.428676229777135
+Mbale,asbuilt_blended,no_change,"horizontal, rain-exposed",0.01676,5.221181650144228
+Mbale,asbuilt_blended,SSP2-4.5,sheltered,0.99458,68.87722668019899
+Mbale,asbuilt_blended,SSP2-4.5,"vertical, rain-exposed",0.34956,18.120127918142515
+Mbale,asbuilt_blended,SSP2-4.5,"horizontal, rain-exposed",0.02186,5.662688710176334
+Mbale,asbuilt_blended,SSP5-8.5,sheltered,0.99622,75.46722540814483
+Mbale,asbuilt_blended,SSP5-8.5,"vertical, rain-exposed",0.39328,19.720358322249325
+Mbale,asbuilt_blended,SSP5-8.5,"horizontal, rain-exposed",0.02866,6.1282093042261305
+Gulu,design_CEM_I,no_change,sheltered,0.13622,22.11407554827074
+Gulu,design_CEM_I,no_change,"vertical, rain-exposed",8e-05,6.159466480649612
+Gulu,design_CEM_I,no_change,"horizontal, rain-exposed",0.0,2.0410523672578744
+Gulu,design_CEM_I,SSP2-4.5,sheltered,0.2671,25.428188128778395
+Gulu,design_CEM_I,SSP2-4.5,"vertical, rain-exposed",0.00028,7.024929256512674
+Gulu,design_CEM_I,SSP2-4.5,"horizontal, rain-exposed",0.0,2.309187445649417
+Gulu,design_CEM_I,SSP5-8.5,sheltered,0.40518,28.50573928760257
+Gulu,design_CEM_I,SSP5-8.5,"vertical, rain-exposed",0.0009,7.784268637607373
+Gulu,design_CEM_I,SSP5-8.5,"horizontal, rain-exposed",0.0,2.5316332300971784
+Gulu,design_blended,no_change,sheltered,0.78556,39.330186825087814
+Gulu,design_blended,no_change,"vertical, rain-exposed",0.01338,10.95508160079412
+Gulu,design_blended,no_change,"horizontal, rain-exposed",0.0,3.6301153804484607
+Gulu,design_blended,SSP2-4.5,sheltered,0.88986,45.22420961293026
+Gulu,design_blended,SSP2-4.5,"vertical, rain-exposed",0.02736,12.494349643203691
+Gulu,design_blended,SSP2-4.5,"horizontal, rain-exposed",0.0,4.106989573637168
+Gulu,design_blended,SSP5-8.5,sheltered,0.94138,50.697704104388336
+Gulu,design_blended,SSP5-8.5,"vertical, rain-exposed",0.04666,13.844998432740713
+Gulu,design_blended,SSP5-8.5,"horizontal, rain-exposed",0.0,4.502655634202106
+Gulu,asbuilt_blended,no_change,sheltered,0.99836,81.34905161567865
+Gulu,asbuilt_blended,no_change,"vertical, rain-exposed",0.4775,22.66717226217964
+Gulu,asbuilt_blended,no_change,"horizontal, rain-exposed",0.0466,7.5104900309427665
+Gulu,asbuilt_blended,SSP2-4.5,sheltered,0.99948,93.53937670166798
+Gulu,asbuilt_blended,SSP2-4.5,"vertical, rain-exposed",0.55236,25.85152925215634
+Gulu,asbuilt_blended,SSP2-4.5,"horizontal, rain-exposed",0.0637,8.496805902519068
+Gulu,asbuilt_blended,SSP5-8.5,sheltered,0.99976,104.8604192538561
+Gulu,asbuilt_blended,SSP5-8.5,"vertical, rain-exposed",0.60746,28.64618848894038
+Gulu,asbuilt_blended,SSP5-8.5,"horizontal, rain-exposed",0.08236,9.315309258020658
+Arua,design_CEM_I,no_change,sheltered,0.16942,23.077379500388247
+Arua,design_CEM_I,no_change,"vertical, rain-exposed",0.00016,6.511923770349862
+Arua,design_CEM_I,no_change,"horizontal, rain-exposed",0.0,2.1860665428953965
+Arua,design_CEM_I,SSP2-4.5,sheltered,0.33524,26.958753064503608
+Arua,design_CEM_I,SSP2-4.5,"vertical, rain-exposed",0.00068,7.576899785908181
+Arua,design_CEM_I,SSP2-4.5,"horizontal, rain-exposed",0.0,2.5351546030392687
+Arua,design_CEM_I,SSP5-8.5,sheltered,0.50596,30.710407089504105
+Arua,design_CEM_I,SSP5-8.5,"vertical, rain-exposed",0.0018,8.57992611022947
+Arua,design_CEM_I,SSP5-8.5,"horizontal, rain-exposed",0.0,2.8536925148625154
+Arua,design_blended,no_change,sheltered,0.82316,41.043439850682084
+Arua,design_blended,no_change,"vertical, rain-exposed",0.01784,11.581913136778974
+Arua,design_blended,no_change,"horizontal, rain-exposed",0.0,3.88800355153377
+Arua,design_blended,SSP2-4.5,sheltered,0.92036,47.94583213872807
+Arua,design_blended,SSP2-4.5,"vertical, rain-exposed",0.03946,13.475750849576865
+Arua,design_blended,SSP2-4.5,"horizontal, rain-exposed",0.0,4.508726644128472
+Arua,design_blended,SSP5-8.5,sheltered,0.9637,54.617711160336974
+Arua,design_blended,SSP5-8.5,"vertical, rain-exposed",0.07006,15.25966215256077
+Arua,design_blended,SSP5-8.5,"horizontal, rain-exposed",0.0,5.075238250552018
+Arua,asbuilt_blended,no_change,sheltered,0.99886,84.8926507921777
+Arua,asbuilt_blended,no_change,"vertical, rain-exposed",0.50886,23.96383109257653
+Arua,asbuilt_blended,no_change,"horizontal, rain-exposed",0.05536,8.043849400619836
+Arua,asbuilt_blended,SSP2-4.5,sheltered,0.99968,99.1671612332671
+Arua,asbuilt_blended,SSP2-4.5,"vertical, rain-exposed",0.59626,27.88140056420185
+Arua,asbuilt_blended,SSP2-4.5,"horizontal, rain-exposed",0.08096,9.32751031894787
+Arua,asbuilt_blended,SSP5-8.5,sheltered,0.99992,112.96554725062309
+Arua,asbuilt_blended,SSP5-8.5,"vertical, rain-exposed",0.66074,31.572295170444782
+Arua,asbuilt_blended,SSP5-8.5,"horizontal, rain-exposed",0.10852,10.49936760837437
+Mbarara,design_CEM_I,no_change,sheltered,0.07022,19.782770926136504
+Mbarara,design_CEM_I,no_change,"vertical, rain-exposed",2e-05,5.224431622538375
+Mbarara,design_CEM_I,no_change,"horizontal, rain-exposed",0.0,1.638692677212941
+Mbarara,design_CEM_I,SSP2-4.5,sheltered,0.17488,23.206971916244886
+Mbarara,design_CEM_I,SSP2-4.5,"vertical, rain-exposed",0.0001,6.146353739105927
+Mbarara,design_CEM_I,SSP2-4.5,"horizontal, rain-exposed",0.0,1.9343576359871362
+Mbarara,design_CEM_I,SSP5-8.5,sheltered,0.3236,26.724310916773373
+Mbarara,design_CEM_I,SSP5-8.5,"vertical, rain-exposed",0.00026,7.0089251803385855
+Mbarara,design_CEM_I,SSP5-8.5,"horizontal, rain-exposed",0.0,2.1850393429037744
+Mbarara,design_blended,no_change,sheltered,0.67016,35.18393106195326
+Mbarara,design_blended,no_change,"vertical, rain-exposed",0.00474,9.291977307808569
+Mbarara,design_blended,no_change,"horizontal, rain-exposed",0.0,2.9144618157647875
+Mbarara,design_blended,SSP2-4.5,sheltered,0.82636,41.27331567548737
+Mbarara,design_blended,SSP2-4.5,"vertical, rain-exposed",0.01304,10.931471010113555
+Mbarara,design_blended,SSP2-4.5,"horizontal, rain-exposed",0.0,3.4402197093825357
+Mbarara,design_blended,SSP5-8.5,sheltered,0.91582,47.52882475003564
+Mbarara,design_blended,SSP5-8.5,"vertical, rain-exposed",0.02746,12.46561271322117
+Mbarara,design_blended,SSP5-8.5,"horizontal, rain-exposed",0.0,3.8860642224006523
+Mbarara,asbuilt_blended,no_change,sheltered,0.99664,72.773035637691
+Mbarara,asbuilt_blended,no_change,"vertical, rain-exposed",0.3814,19.225833730351784
+Mbarara,asbuilt_blended,no_change,"horizontal, rain-exposed",0.0257,6.0296531953468335
+Mbarara,asbuilt_blended,SSP2-4.5,sheltered,0.99888,85.36755258513658
+Mbarara,asbuilt_blended,SSP2-4.5,"vertical, rain-exposed",0.47412,22.617751509097197
+Mbarara,asbuilt_blended,SSP2-4.5,"horizontal, rain-exposed",0.03974,7.117166957236416
+Mbarara,asbuilt_blended,SSP5-8.5,sheltered,0.9996,98.30647444945927
+Mbarara,asbuilt_blended,SSP5-8.5,"vertical, rain-exposed",0.5503,25.792392511736654
+Mbarara,asbuilt_blended,SSP5-8.5,"horizontal, rain-exposed",0.0546,8.03965543193619
+Kasese,design_CEM_I,no_change,sheltered,0.08402,20.338117647543527
+Kasese,design_CEM_I,no_change,"vertical, rain-exposed",4e-05,5.286901530300972
+Kasese,design_CEM_I,no_change,"horizontal, rain-exposed",0.0,1.6318102947226414
+Kasese,design_CEM_I,SSP2-4.5,sheltered,0.20698,24.043467082248846
+Kasese,design_CEM_I,SSP2-4.5,"vertical, rain-exposed",0.00016,6.270571184607375
+Kasese,design_CEM_I,SSP2-4.5,"horizontal, rain-exposed",0.0,1.9427741531887688
+Kasese,design_CEM_I,SSP5-8.5,sheltered,0.37368,27.829234342627394
+Kasese,design_CEM_I,SSP5-8.5,"vertical, rain-exposed",0.00038,7.141232342549262
+Kasese,design_CEM_I,SSP5-8.5,"horizontal, rain-exposed",0.0,2.178222527843926
+Kasese,design_blended,no_change,sheltered,0.70118,36.171624401059674
+Kasese,design_blended,no_change,"vertical, rain-exposed",0.00532,9.40312179983765
+Kasese,design_blended,no_change,"horizontal, rain-exposed",0.0,2.902243320547715
+Kasese,design_blended,SSP2-4.5,sheltered,0.8531,42.76088112350752
+Kasese,design_blended,SSP2-4.5,"vertical, rain-exposed",0.01528,11.15240462204969
+Kasese,design_blended,SSP2-4.5,"horizontal, rain-exposed",0.0,3.4552027759653887
+Kasese,design_blended,SSP5-8.5,sheltered,0.93122,49.493387147412605
+Kasese,design_blended,SSP5-8.5,"vertical, rain-exposed",0.03112,12.700880011602393
+Kasese,design_blended,SSP5-8.5,"horizontal, rain-exposed",0.0,3.8739324625841274
+Kasese,asbuilt_blended,no_change,sheltered,0.9971,74.81595985515338
+Kasese,asbuilt_blended,no_change,"vertical, rain-exposed",0.3883,19.45580782573786
+Kasese,asbuilt_blended,no_change,"horizontal, rain-exposed",0.0251,6.00436134814883
+Kasese,asbuilt_blended,SSP2-4.5,sheltered,0.9992,88.44381926624042
+Kasese,asbuilt_blended,SSP2-4.5,"vertical, rain-exposed",0.48554,23.07494551452398
+Kasese,asbuilt_blended,SSP2-4.5,"horizontal, rain-exposed",0.03974,7.148162066878172
+Kasese,asbuilt_blended,SSP5-8.5,sheltered,0.99966,102.3680489494137
+Kasese,asbuilt_blended,SSP5-8.5,"vertical, rain-exposed",0.56054,26.278608552601895
+Kasese,asbuilt_blended,SSP5-8.5,"horizontal, rain-exposed",0.05402,8.014225822488964

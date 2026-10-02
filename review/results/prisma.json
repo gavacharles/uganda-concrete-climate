@@ -1,0 +1,49 @@
+{
+  "identified": {
+    "openalex": {
+      "S1_climate_deterioration": 835,
+      "S2_africa_tropical_durability": 231,
+      "S3_uganda_materials": 840,
+      "S4_uganda_exposure": 1570
+    },
+    "scopus": {
+      "S1_climate_deterioration": 2411,
+      "S2_africa_tropical_durability": 376,
+      "S3_uganda_materials": 18,
+      "S4_uganda_exposure": 86
+    }
+  },
+  "identified_total": {
+    "openalex": 3476,
+    "scopus": 2891
+  },
+  "scopus_ineligible_type_year_language": 105,
+  "duplicates_within_openalex": 42,
+  "duplicates_within_scopus": 41,
+  "duplicates_across_databases": 605,
+  "records_screened": 5574,
+  "records_by_database": {
+    "openalex": 2812,
+    "scopus": 2140,
+    "both": 622
+  },
+  "excluded_corrupted_metadata": 357,
+  "excluded_stage1_rules": 3964,
+  "screened_stage2": 1253,
+  "flagged_integrity": 22,
+  "excluded_stage2": 1039,
+  "duplicates_in_included": 4,
+  "included": 188,
+  "included_by_theme": {
+    "T1": 89,
+    "T2": 65,
+    "T3": 16,
+    "T4": 18
+  },
+  "included_by_database": {
+    "both": 84,
+    "scopus": 52,
+    "openalex": 52
+  },
+  "unmatched_include_keys": []
+}

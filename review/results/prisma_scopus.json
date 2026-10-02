@@ -1,0 +1,25 @@
+{
+  "identified_by_search": {
+    "S1_climate_deterioration": 2411,
+    "S2_africa_tropical_durability": 376,
+    "S3_uganda_materials": 18,
+    "S4_uganda_exposure": 86
+  },
+  "identified_total": 2891,
+  "removed_outside_limits": 105,
+  "removed_duplicates": 41,
+  "screened": 2745,
+  "excluded_corrupted_metadata": 1,
+  "excluded_stage1": 2065,
+  "assessed_stage2": 679,
+  "flagged_integrity": 0,
+  "excluded_stage2": 542,
+  "duplicates_in_included": 0,
+  "included": 137,
+  "included_by_theme": {
+    "T1": 81,
+    "T2": 47,
+    "T3": 2,
+    "T4": 7
+  }
+}

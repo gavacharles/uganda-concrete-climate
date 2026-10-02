@@ -1,0 +1,25 @@
+{
+  "hits": {
+    "S1_climate_deterioration": 2411,
+    "S2_africa_tropical_durability": 376,
+    "S3_uganda_materials": 18,
+    "S4_uganda_exposure": 86
+  },
+  "ineligible": {
+    "S1_climate_deterioration": 67,
+    "S2_africa_tropical_durability": 34,
+    "S3_uganda_materials": 1,
+    "S4_uganda_exposure": 3
+  },
+  "eligible": {
+    "S1_climate_deterioration": 2344,
+    "S2_africa_tropical_durability": 342,
+    "S3_uganda_materials": 17,
+    "S4_uganda_exposure": 83
+  },
+  "scopus_unique": 2745,
+  "scopus_in_openalex": 605,
+  "scopus_new": 2140,
+  "openalex_unique": 3434,
+  "union_unique": 5574
+}
