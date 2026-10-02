@@ -1,0 +1,55 @@
+site,uhi_estimate,delta_t_air,case,p_init_2100
+Kampala,none,0.0,no_change,0.3648
+Kampala,none,0.0,SSP2-4.5,0.55188
+Kampala,none,0.0,SSP5-8.5,0.68672
+Kampala,low (0.5 x night SUHI),0.42860506174567364,no_change,0.47896
+Kampala,low (0.5 x night SUHI),0.42860506174567364,SSP2-4.5,0.6623
+Kampala,low (0.5 x night SUHI),0.42860506174567364,SSP5-8.5,0.78406
+Kampala,central (1.0 x night SUHI),0.8572101234913473,no_change,0.5777
+Kampala,central (1.0 x night SUHI),0.8572101234913473,SSP2-4.5,0.74794
+Kampala,central (1.0 x night SUHI),0.8572101234913473,SSP5-8.5,0.85114
+Mbale,none,0.0,no_change,0.46106
+Mbale,none,0.0,SSP2-4.5,0.60294
+Mbale,none,0.0,SSP5-8.5,0.69502
+Mbale,low (0.5 x night SUHI),0.07163538461945226,no_change,0.47806
+Mbale,low (0.5 x night SUHI),0.07163538461945226,SSP2-4.5,0.62056
+Mbale,low (0.5 x night SUHI),0.07163538461945226,SSP5-8.5,0.7131
+Mbale,central (1.0 x night SUHI),0.14327076923890453,no_change,0.495
+Mbale,central (1.0 x night SUHI),0.14327076923890453,SSP2-4.5,0.63806
+Mbale,central (1.0 x night SUHI),0.14327076923890453,SSP5-8.5,0.72916
+Gulu,none,0.0,no_change,0.78556
+Gulu,none,0.0,SSP2-4.5,0.88986
+Gulu,none,0.0,SSP5-8.5,0.94138
+Gulu,low (0.5 x night SUHI),0.47052570998327126,no_change,0.82584
+Gulu,low (0.5 x night SUHI),0.47052570998327126,SSP2-4.5,0.91542
+Gulu,low (0.5 x night SUHI),0.47052570998327126,SSP5-8.5,0.9576
+Gulu,central (1.0 x night SUHI),0.9410514199665425,no_change,0.85652
+Gulu,central (1.0 x night SUHI),0.9410514199665425,SSP2-4.5,0.93436
+Gulu,central (1.0 x night SUHI),0.9410514199665425,SSP5-8.5,0.96872
+Arua,none,0.0,no_change,0.82316
+Arua,none,0.0,SSP2-4.5,0.92036
+Arua,none,0.0,SSP5-8.5,0.9637
+Arua,low (0.5 x night SUHI),0.6981628737937351,no_change,0.86198
+Arua,low (0.5 x night SUHI),0.6981628737937351,SSP2-4.5,0.94146
+Arua,low (0.5 x night SUHI),0.6981628737937351,SSP5-8.5,0.97414
+Arua,central (1.0 x night SUHI),1.3963257475874702,no_change,0.89038
+Arua,central (1.0 x night SUHI),1.3963257475874702,SSP2-4.5,0.95552
+Arua,central (1.0 x night SUHI),1.3963257475874702,SSP5-8.5,0.9816
+Mbarara,none,0.0,no_change,0.67016
+Mbarara,none,0.0,SSP2-4.5,0.82636
+Mbarara,none,0.0,SSP5-8.5,0.91582
+Mbarara,low (0.5 x night SUHI),0.5191086898108513,no_change,0.73064
+Mbarara,low (0.5 x night SUHI),0.5191086898108513,SSP2-4.5,0.86692
+Mbarara,low (0.5 x night SUHI),0.5191086898108513,SSP5-8.5,0.93864
+Mbarara,central (1.0 x night SUHI),1.0382173796217027,no_change,0.77674
+Mbarara,central (1.0 x night SUHI),1.0382173796217027,SSP2-4.5,0.8944
+Mbarara,central (1.0 x night SUHI),1.0382173796217027,SSP5-8.5,0.95406
+Kasese,none,0.0,no_change,0.70118
+Kasese,none,0.0,SSP2-4.5,0.8531
+Kasese,none,0.0,SSP5-8.5,0.93122
+Kasese,low (0.5 x night SUHI),0.2712700784331131,no_change,0.74052
+Kasese,low (0.5 x night SUHI),0.2712700784331131,SSP2-4.5,0.87732
+Kasese,low (0.5 x night SUHI),0.2712700784331131,SSP5-8.5,0.94398
+Kasese,central (1.0 x night SUHI),0.5425401568662263,no_change,0.77328
+Kasese,central (1.0 x night SUHI),0.5425401568662263,SSP2-4.5,0.89614
+Kasese,central (1.0 x night SUHI),0.5425401568662263,SSP5-8.5,0.95424

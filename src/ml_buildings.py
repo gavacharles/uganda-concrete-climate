@@ -11,6 +11,10 @@ Outputs
   results/ml_buildings_cv.csv          AUC and average precision per fold
   results/ml_buildings_epoch_check.csv OSM-labelled multi-storey share by GHS-OBAT epoch (Kampala cells)
   results/ml_buildings_cells.csv       expected multi-storey buildings per 0.25 deg cell and epoch
+  results/ml_buildings_transfer.csv    geographic transfer test: trained in Kampala, tested in other towns
+  results/ml_buildings_label_bias.csv  multi-storey share among OSM-tagged buildings vs predicted share of all
+                                       buildings, within 8 km of each town
+  data/processed/kampala_buildings_pred.csv.gz  per-building predictions for Greater Kampala
 """
 from pathlib import Path
 
@@ -100,17 +104,52 @@ def main():
         ROOT / "results" / "ml_buildings_cv.csv", index=False)
     print(pd.DataFrame(cv, columns=["fold", "auc", "ap", "prev", "n"]).round(3), flush=True)
 
+    # geographic transfer: train on the Kampala area only, test on labels near the other towns
+    town_ll = np.array(list(TOWNS.values()))
+    dk = np.hypot(lab.lat.to_numpy()[:, None] - town_ll[None, :, 0],
+                  (lab.lon.to_numpy()[:, None] - town_ll[None, :, 1]) * np.cos(np.radians(town_ll[None, :, 0]))) * 111.32
+    near = dk.argmin(axis=1)
+    within = dk.min(axis=1) <= 8.0
+    in_kla = lab.lat.between(0.0, 0.75).to_numpy() & lab.lon.between(32.25, 33.0).to_numpy()
+    names = np.array(list(TOWNS))
+    test = within & ~in_kla & (names[near] != "Kampala")
+    mk = HistGradientBoostingClassifier(max_iter=300, learning_rate=0.06, random_state=0).fit(X[in_kla], y[in_kla])
+    pt = mk.predict_proba(X[test])[:, 1]
+    tr = [("trained Kampala area, tested other towns", int(test.sum()), int(y[test].sum()),
+           roc_auc_score(y[test], pt), average_precision_score(y[test], pt), float(y[test].mean()), float(pt.mean()))]
+    pd.DataFrame(tr, columns=["test", "n", "n_multi", "auc", "avg_precision", "observed_share", "predicted_share"]
+                 ).to_csv(ROOT / "results" / "ml_buildings_transfer.csv", index=False)
+    print(pd.read_csv(ROOT / "results" / "ml_buildings_transfer.csv").round(3), flush=True)
+    tagged = pd.DataFrame({"town": names[near][within], "y": y[within]}).groupby("town").y.agg(["size", "mean"])
+
     # final model (unweighted, so probabilities stay calibrated to label prevalence) and national prediction
     mdl = HistGradientBoostingClassifier(max_iter=300, learning_rate=0.06, random_state=0).fit(X, y)
-    out = []
+    out, kla_rows, town_sum = [], [], {}
     for c in chunks():
         c = add_features(c, bins, tree_towns)
         p = mdl.predict_proba(c[FEATS])[:, 1]
+        kb = c.lat.between(0.10, 0.60) & c.lon.between(32.35, 32.85)
+        kla_rows.append(c.loc[kb, ["lat", "lon", "epoch", "area", "use", "height"]].assign(p_multi=p[kb.to_numpy()]))
+        dt = np.hypot(c.lat.to_numpy()[:, None] - town_ll[None, :, 0],
+                      (c.lon.to_numpy()[:, None] - town_ll[None, :, 1]) * np.cos(np.radians(town_ll[None, :, 0]))) * 111.32
+        w8 = dt.min(axis=1) <= 8.0
+        for t, g in pd.DataFrame({"t": names[dt.argmin(axis=1)][w8], "p": p[w8]}).groupby("t").p:
+            a = town_sum.setdefault(t, [0.0, 0])
+            a[0] += g.sum()
+            a[1] += len(g)
         g = pd.DataFrame({"glat": (np.floor(c.lat / 0.25) + 0.5) * 0.25, "glon": (np.floor(c.lon / 0.25) + 0.5) * 0.25,
                           "epoch": c.epoch, "p": p, "ghs_tall": (c.height >= 4.5).astype(float)})
         out.append(g.groupby(["glat", "glon", "epoch"]).agg(n=("p", "size"), ml_multi=("p", "sum"),
                                                             ghs_tall=("ghs_tall", "sum")))
         print("pred chunk", flush=True)
+    pd.concat(kla_rows).to_csv(ROOT / "data" / "processed" / "kampala_buildings_pred.csv.gz", index=False)
+    lb = pd.DataFrame({t: {"predicted_share_all_buildings": v[0] / v[1], "n_buildings": v[1]}
+                       for t, v in town_sum.items()}).T
+    lb = lb.join(tagged.rename(columns={"size": "n_tagged", "mean": "tagged_multi_share"}), how="left")
+    lb.to_csv(ROOT / "results" / "ml_buildings_label_bias.csv")
+    print(lb.round(3), flush=True)
+    import joblib
+    joblib.dump(mdl, ROOT / "results" / "ml_buildings_model.joblib")
     cells = pd.concat(out).groupby(level=[0, 1, 2]).sum().reset_index()
     cells.to_csv(ROOT / "results" / "ml_buildings_cells.csv", index=False)
     print(cells.groupby("epoch")[["n", "ml_multi", "ghs_tall"]].sum().round(0))

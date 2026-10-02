@@ -33,3 +33,11 @@ data/fetch_log*.txt
 
 # superseded intermediate results
 results/*_6models.csv
+results/*.joblib
+
+# large derived grids and per-building predictions (regenerate with the scripts)
+data/processed/modis_lst_uganda_2020_2021.nc
+data/processed/suhi_uganda.nc
+data/processed/building_density_001.nc
+data/processed/kampala_buildings_pred.csv.gz
+results/modis_log.txt
