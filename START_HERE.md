@@ -64,16 +64,14 @@ Also here: Ekolu 2020 (CO₂), Ekolu & Solomon 2022, Buregyeya 2018, Dimova 2025
 
 ## Status (2 Oct 2026)
 
-- [x] Systematic review: OpenAlex + Scopus, PRISMA diagram and search strings (Literature Review doc)
-- [x] Blended-cement factor calibrated (2.6–4.4) from Ekolu & Solomon 2022 and Buregyeya 2018
-- [x] City, national stock and adaptation runs with all 8 models; figures 2–7
-- [x] Manuscript: all sections drafted, including Results, Discussion, Conclusions, Abstract
-- [x] Extensions: sensitivity, rain exposure, cracking, model spread, new construction, cost-effectiveness (Sections 4.6, 5.6–5.10)
-- [x] Growth map, urban heat, three ML analyses (Sections 4.7, 5.11–5.13)
-- [x] Rainfall extremes: Supplementary S10 (Figure S5)
-- [x] Trim: main text 9 figures + 5 tables; further analyses moved to Supplementary S2–S10; abstract ~240 words
-- [ ] Check the propagation parameters (DuraCrete 2000, Alonso et al. 1998) against the full texts
-- [ ] Ugandan unit costs (concrete per m³, patch repair per m²) to turn Table 7 into money
-- [ ] Remaining paywalled papers (Ekolu 2020 Kampala chapter, fib Bulletin 34, Stewart 2011/2012)
-- [ ] Choose the target journal and format references
-- Decided: no field survey; UNMA humidity data and US EAS 18-1 not obtainable
+- Paper A doc: https://claude.ai/code/artifact/ecead7f2-5c83-429f-a4c0-5b1e5691670c (Scopus-only review, 137 studies; main text + supplement S1–S7)
+- Paper B doc: https://claude.ai/code/artifact/9c3efa01-9d99-49b5-944c-3e93bc82cae8 (draft; three analyses to do)
+- Word versions: `manuscripts/PaperA_manuscript.docx`, `manuscripts/PaperB_manuscript.docx`
+  (rebuild after editing the docs: export markdown, then `.venv/bin/python src/build_docx.py A|B <export.md>`)
+- Code repository (private): https://github.com/gavacharles/uganda-concrete-climate
+
+To do, Paper A: choose journal and format references; add ~20 missing references; check propagation parameters
+(DuraCrete 2000, Alonso et al. 1998) and the Stewart et al. (2011) "16%" figure against full texts; read Ekolu (2020) Kampala chapter;
+add affiliation; co-author read-through.
+To do, Paper B: observed urban heat (MODIS LST), building-level Kampala risk map, independent check of the classifier,
+then abstract, discussion, conclusions.
