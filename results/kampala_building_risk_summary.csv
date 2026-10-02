@@ -1,0 +1,12 @@
+quantity,total
+exp_asbuilt_blended_SSP5-8.5_uhi,339773.9170284618
+exp_asbuilt_blended_SSP5-8.5_nouhi,339485.36517993844
+exp_asbuilt_blended_no_change_uhi,337153.4477009718
+exp_asbuilt_blended_no_change_nouhi,335579.6362372944
+exp_design_blended_SSP5-8.5_uhi,272229.982046477
+exp_design_blended_SSP5-8.5_nouhi,244676.0125572332
+exp_design_blended_no_change_uhi,183124.71311071014
+exp_design_blended_no_change_nouhi,142563.10465373963
+p_multi,340287.77008316584
+buildings,2250695.0
+mean_night_suhi_weighted_by_p_multi,0.4460093077811139

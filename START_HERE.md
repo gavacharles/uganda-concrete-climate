@@ -65,7 +65,7 @@ Also here: Ekolu 2020 (CO₂), Ekolu & Solomon 2022, Buregyeya 2018, Dimova 2025
 ## Status (2 Oct 2026)
 
 - Paper A doc: https://claude.ai/code/artifact/ecead7f2-5c83-429f-a4c0-5b1e5691670c (Scopus-only review, 137 studies; main text + supplement S1–S7)
-- Paper B doc: https://claude.ai/code/artifact/9c3efa01-9d99-49b5-944c-3e93bc82cae8 (draft; three analyses to do)
+- Paper B doc: https://claude.ai/code/artifact/9c3efa01-9d99-49b5-944c-3e93bc82cae8 (complete draft: all analyses done)
 - Word versions: `manuscripts/PaperA_manuscript.docx`, `manuscripts/PaperB_manuscript.docx`
   (rebuild after editing the docs: export markdown, then `.venv/bin/python src/build_docx.py A|B <export.md>`)
 - Code repository (private): https://github.com/gavacharles/uganda-concrete-climate
@@ -73,5 +73,5 @@ Also here: Ekolu 2020 (CO₂), Ekolu & Solomon 2022, Buregyeya 2018, Dimova 2025
 To do, Paper A: choose journal and format references; add ~20 missing references; check propagation parameters
 (DuraCrete 2000, Alonso et al. 1998) and the Stewart et al. (2011) "16%" figure against full texts; read Ekolu (2020) Kampala chapter;
 add affiliation; co-author read-through.
-To do, Paper B: observed urban heat (MODIS LST), building-level Kampala risk map, independent check of the classifier,
-then abstract, discussion, conclusions.
+To do, Paper B: add East African urban-heat-island references; check the Planetary Computer citation; choose journal;
+ideally obtain air-temperature data or building heights (Google Open Buildings 2.5D) to tighten the two main assumptions.

@@ -504,6 +504,84 @@ def fig_carbonation_check():
     fig.savefig(FIG / "figS3_carbonation_check.png")
 
 
+def figB2_buildings():
+    """Paper B Figure 2: label bias by town, and multi-storey counts by epoch (proxy vs ML)."""
+    lb = pd.read_csv(RES / "ml_buildings_label_bias.csv", index_col=0).dropna(subset=["tagged_multi_share"])
+    lb = lb[lb.n_tagged >= 9].sort_values("predicted_share_all_buildings")
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.4), gridspec_kw={"width_ratios": [1.15, 1]})
+    ax = axes[0]
+    y = np.arange(len(lb))
+    ax.hlines(y, lb[["predicted_share_all_buildings", "tagged_multi_share"]].min(axis=1),
+              lb[["predicted_share_all_buildings", "tagged_multi_share"]].max(axis=1), color=GRID, lw=3, zorder=1)
+    ax.scatter(lb.predicted_share_all_buildings, y, s=30, color="#2a78d6", edgecolor="white", zorder=3,
+               label="Predicted, all buildings")
+    ax.scatter(lb.tagged_multi_share, y, s=30, color="#eb6834", marker="D", edgecolor="white", zorder=3,
+               label="OSM-tagged buildings")
+    ax.set_yticks(y)
+    ax.set_yticklabels([f"{t} ({int(n)})" for t, n in zip(lb.index, lb.n_tagged)], fontsize=7)
+    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0%}"))
+    ax.set_xlim(0, 0.85)
+    ax.set_xlabel("Share with two or more storeys (within 8 km)")
+    ax.set_title("a  Tagged versus predicted, by town", fontsize=8.5)
+    ax.legend(fontsize=7, loc="lower right")
+    ax.grid(axis="y", visible=False)
+    cells = pd.read_csv(RES / "ml_buildings_cells.csv")
+    e = cells[cells.epoch.between(1, 5)].groupby("epoch")[["ghs_tall", "ml_multi"]].sum() / 1e3
+    ax = axes[1]
+    x = np.arange(len(e))
+    ax.bar(x - 0.2, e.ghs_tall, 0.38, color=MUTED, edgecolor="white", label="Height proxy (\u2265 4.5 m)")
+    ax.bar(x + 0.2, e.ml_multi, 0.38, color="#eb6834", edgecolor="white", label="ML estimate")
+    ax.set_xticks(x)
+    ax.set_xticklabels(["<1980", "1980s", "1990s", "2000s", "2010s"], fontsize=7.5)
+    ax.set_ylabel("Multi-storey buildings (thousands)")
+    ax.set_title("b  Uganda: multi-storey buildings by epoch", fontsize=8.5)
+    ax.legend(fontsize=7, loc="upper right")
+    ax.grid(axis="x", visible=False)
+    fig.tight_layout(w_pad=1.5)
+    fig.savefig(FIG / "figB2_buildings_ml.png")
+
+
+def figB4_observed_uhi():
+    """Paper B Figure 4: observed surface heat islands and their effect on initiation."""
+    c = pd.read_csv(RES / "suhi_cities.csv").set_index("site").reindex(SITES)
+    u = pd.read_csv(RES / "uhi_observed_pinit.csv")
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.0))
+    ax = axes[0]
+    y = np.arange(len(SITES))[::-1]
+    ax.barh(y + 0.19, c.suhi_day, 0.36, color="#eb6834", edgecolor="white", label="Day (13:30)")
+    ax.barh(y - 0.19, c.suhi_night, 0.36, color="#2a78d6", edgecolor="white", label="Night (01:30)")
+    for v, q in zip(c.suhi_day, y + 0.19):
+        ax.text(v + 0.1, q, f"{v:.1f}", fontsize=7, color=INK2, va="center")
+    for v, q in zip(c.suhi_night, y - 0.19):
+        ax.text(v + 0.1, q, f"{v:.1f}", fontsize=7, color=INK2, va="center")
+    ax.set_yticks(y)
+    ax.set_yticklabels(SITES)
+    ax.set_xlabel("Surface heat island, urban core (\u00b0C)")
+    ax.set_title("a  Observed heat island, 2020\u20132021", fontsize=8.5)
+    ax.set_xlim(0, 8.5)
+    ax.legend(fontsize=7, loc="center right")
+    ax.grid(axis="y", visible=False)
+    ax = axes[1]
+    est = {"none": ("No heat island", "D", MUTED), "low (0.5 x night SUHI)": ("Low estimate", "o", "#9ec5f4"),
+           "central (1.0 x night SUHI)": ("Central estimate", "o", "#2a78d6")}
+    g = u[u.case == "SSP5-8.5"].pivot_table(index="site", columns="uhi_estimate", values="p_init_2100").reindex(SITES)
+    g0 = u[u.case == "no_change"].pivot_table(index="site", columns="uhi_estimate", values="p_init_2100").reindex(SITES)
+    for k, (lab, mk, col) in est.items():
+        ax.scatter(g0[k], y + 0.15, marker=mk, s=26, color=col, edgecolor="white", zorder=3, label=lab)
+        ax.scatter(g[k], y - 0.15, marker=mk, s=26, color=col, edgecolor="#eb6834", linewidth=1, zorder=3)
+    ax.set_yticks(y)
+    ax.set_yticklabels(SITES)
+    ax.set_xlim(0.3, 1.0)
+    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0%}"))
+    ax.set_xlabel("P(initiation) by 2100")
+    ax.set_title("b  Upper row: no climate change;\n    lower row (orange edge): SSP5-8.5", fontsize=8)
+    ax.legend(fontsize=7, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=3, handletextpad=0.3,
+              columnspacing=1.0)
+    ax.grid(axis="y", visible=False)
+    fig.tight_layout(w_pad=1.5)
+    fig.savefig(FIG / "figB4_observed_uhi.png")
+
+
 if __name__ == "__main__":
     for f in (fig2, fig3, fig4, fig5, fig6, fig7, fig8, fig9, fig10, fig11, fig12, fig13):
         try:

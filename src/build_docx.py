@@ -46,9 +46,11 @@ PAPERS = {
         out="PaperB_manuscript.docx",
         images={
             "Figure 1. Growth": "fig11_growth.png",
-            "Figure 2. Machine-learning": "fig13_machine_learning.png",
-            "Figure 3. Urban heat": "fig12_urban_heat.png",
-            "Figure 4. Rainfall": "fig14_rain_extremes.png",
+            "Figure 2. Multi-storey": "figB2_buildings_ml.png",
+            "Figure 3. Observed urban heat": "figB4_observed_uhi.png",
+            "Figure 4. Heat-island sensitivity": "fig12_urban_heat.png",
+            "Figure 5. Kampala": "figB5_kampala_risk.png",
+            "Figure 6. Rainfall": "fig14_rain_extremes.png",
         }),
 }
 AUTHOR = "Gavamukulya Charles"

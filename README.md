@@ -27,6 +27,10 @@ Code, processed data and results for two companion papers:
 | Multi-storey classifier (OSM labels) | `src/osm_levels.py` → `src/ml_buildings.py` → `src/ml_reweight.py` | `results/ml_buildings_*.csv`, `stock_summary_ml.csv` | B |
 | Surrogate of the carbonation model | `src/ml_surrogate.py` | `results/ml_surrogate_*.csv` | B |
 | Rainfall extremes | `src/fetch_rain_extremes.py` → `src/rain_extremes_analysis.py` | `results/rain_extremes_*.csv` | B |
+| Observed urban heat island (MODIS Aqua LST 2020–2021, Copernicus DEM) | `src/fetch_modis_lst.py` + `src/building_density.py` → `src/observed_uhi.py` | `results/suhi_cities.csv`, `suhi_cells.csv`, `uhi_observed_pinit.csv` | B |
+| Classifier checks (geographic transfer, label bias) | `src/ml_buildings.py` | `results/ml_buildings_transfer.csv`, `ml_buildings_label_bias.csv` | B |
+| Building-level risk, Greater Kampala | `src/kampala_building_risk.py` | `results/kampala_building_risk_*.csv`, `figures/figB5_kampala_risk.png` | B |
+| Word manuscripts | `src/build_docx.py` | `manuscripts/Paper*_manuscript.docx` | A, B |
 | Figures | `src/figures.py`, `review/prisma_figure_scopus.py` | `figures/` | A, B |
 | Re-run all analyses | `src/run_all.sh` | — | A |
 
@@ -42,15 +46,18 @@ Code, processed data and results for two companion papers:
 | `fig10_new_construction.png` | Figure S3 | — |
 | `figS3_carbonation_check.png` | Figure S4 | — |
 | `fig11_growth.png` | — | Figure 1 |
-| `fig13_machine_learning.png` | — | Figure 2 |
-| `fig12_urban_heat.png` | — | Figure 3 |
-| `fig14_rain_extremes.png` | — | Figure 4 |
+| `figB2_buildings_ml.png` | — | Figure 2 |
+| `figB4_observed_uhi.png` | — | Figure 3 |
+| `fig12_urban_heat.png` | — | Figure 4 |
+| `figB5_kampala_risk.png` | — | Figure 5 |
+| `fig14_rain_extremes.png` | — | Figure 6 |
 
 ## Reproducing
 
 ```sh
 python3 -m venv .venv
-.venv/bin/pip install numpy pandas scipy xarray netCDF4 requests matplotlib openpyxl pypdf scikit-learn osmium
+.venv/bin/pip install numpy pandas scipy xarray netCDF4 requests matplotlib openpyxl pypdf scikit-learn osmium \
+    pystac-client planetary-computer rasterio shapely mercantile joblib python-docx pypandoc_binary
 .venv/bin/python src/fetch_nex_gddp.py          # climate data (several hours)
 .venv/bin/python src/aggregate_stock.py         # needs the GHS-OBAT Uganda CSV in data/raw/ghs_obat_uga/
 ./src/run_all.sh                                # cities, adaptation, stock, figures

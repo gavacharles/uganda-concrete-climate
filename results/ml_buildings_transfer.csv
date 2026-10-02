@@ -1,0 +1,2 @@
+test,n,n_multi,auc,avg_precision,observed_share,predicted_share
+"trained Kampala area, tested other towns",455,76,0.7812803777253159,0.4453573066933364,0.16703296703296702,0.3028456263710488
