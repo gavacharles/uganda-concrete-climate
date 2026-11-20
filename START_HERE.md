@@ -66,7 +66,7 @@ Also here: Ekolu 2020 (CO₂), Ekolu & Solomon 2022, Buregyeya 2018, Dimova 2025
 
 - Paper A doc: https://claude.ai/code/artifact/ecead7f2-5c83-429f-a4c0-5b1e5691670c (Scopus-only review, 137 studies; main text + supplement S1–S7)
 - Paper B doc: https://claude.ai/code/artifact/9c3efa01-9d99-49b5-944c-3e93bc82cae8 (complete draft: all analyses done)
-- Word versions: `manuscripts/PaperA_manuscript.docx`, `manuscripts/PaperB_manuscript.docx`
+- Word versions are built locally and kept private until publication.
   (rebuild after editing the docs: export markdown, then `.venv/bin/python src/build_docx.py A|B <export.md>`)
 - Code repository (private): https://github.com/gavacharles/uganda-concrete-climate
 

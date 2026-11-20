@@ -30,7 +30,7 @@ Code, processed data and results for two companion papers:
 | Observed urban heat island (MODIS Aqua LST 2020–2021, Copernicus DEM) | `src/fetch_modis_lst.py` + `src/building_density.py` → `src/observed_uhi.py` | `results/suhi_cities.csv`, `suhi_cells.csv`, `uhi_observed_pinit.csv` | B |
 | Classifier checks (geographic transfer, label bias) | `src/ml_buildings.py` | `results/ml_buildings_transfer.csv`, `ml_buildings_label_bias.csv` | B |
 | Building-level risk, Greater Kampala | `src/kampala_building_risk.py` | `results/kampala_building_risk_*.csv`, `figures/figB5_kampala_risk.png` | B |
-| Word manuscripts | `src/build_docx.py` | `manuscripts/Paper*_manuscript.docx` | A, B |
+| Word manuscripts | `src/build_docx.py` | built locally, kept private | A, B |
 | Figures | `src/figures.py`, `review/prisma_figure_scopus.py` | `figures/` | A, B |
 | Re-run all analyses | `src/run_all.sh` | — | A |
 
