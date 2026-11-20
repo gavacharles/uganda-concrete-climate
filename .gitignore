@@ -41,3 +41,6 @@ data/processed/suhi_uganda.nc
 data/processed/building_density_001.nc
 data/processed/kampala_buildings_pred.csv.gz
 results/modis_log.txt
+
+# Paper drafts and write-ups are kept private (moved 2026-11-20)
+/manuscripts/
